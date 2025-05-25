@@ -10,7 +10,6 @@ The internship spans **8 weeks**, each focused on a specific skillset:
 ### Week 1 – Onboarding and Foundations
 - Setup tools and tech stack
 - Learn programming basics
-- Build a personal portfolio website using **HTML, CSS, and JavaScript**
 
 ### Week 2 – Problem-Solving and Algorithms
 - Explore sorting/searching algorithms
