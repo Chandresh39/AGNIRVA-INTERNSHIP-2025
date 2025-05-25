@@ -18,7 +18,7 @@ The first week is all about getting you comfortable with the tools and technolog
 Building on your programming knowledge, Week 2 will focus on essential problem-solving techniques and algorithms, such as **sorting** and **searching**. You’ll also explore **time and space complexity** using **Big-O notation**, which is crucial for writing efficient code.
 
 ---
-!!!
+<!--
 ## Week 3 – Web Development Basics
 
 Week 3 is dedicated to front-end and back-end development. You’ll learn how to:
@@ -88,7 +88,7 @@ Focus areas:
 By the end of this week, you’ll have a **polished project** ready for your portfolio.
 
 ---
-!!!
+-->
 # Getting Started with the Development Environment
 
 Success in software development depends on having the right tools and knowing how to use them effectively. Over the next six weeks, you’ll be working with some of the most widely used tools in the software industry.
@@ -123,7 +123,7 @@ Success in software development depends on having the right tools and knowing ho
 - Ensure Google Chrome is installed from [https://www.google.com/chrome/](https://www.google.com/chrome/)
 
 ---
-!!!
+<!--
 # Setting Clear Expectations
 
 To make the most of this internship, approach it with the right mindset. This program is designed to **challenge you** and **push you out of your comfort zone**.
@@ -137,7 +137,7 @@ To make the most of this internship, approach it with the right mindset. This pr
 Mistakes are part of the learning process. Treat them as learning opportunities.
 
 ---
-!!!
+-->
 
 # Activity: Setting Up Your Tools
 
