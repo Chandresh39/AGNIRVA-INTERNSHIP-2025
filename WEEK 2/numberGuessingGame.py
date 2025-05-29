@@ -31,7 +31,6 @@ def number_guessing_game():
     attempts = 0
     max_attempts = 10
 
-    print("Welcome to the Number Guessing Game!")
     print(f"I have selected a number between 1 and {range_max}. Can you guess it?")
 
     
@@ -57,6 +56,7 @@ def number_guessing_game():
             break
 
 def main():
+    print("Welcome to the Number Guessing Game!")
     while True:
         number_guessing_game()
         play_again = input("Do you want to play again? (yes/no): ").lower()
