@@ -9,14 +9,14 @@ def number_guessing_game():
     choice = int(input("Enter your choice: "))
     
     while True:
-    try:
-        choice = int(input("Enter your choice: "))
-        if choice in [1, 2, 3]:
-            break
-        else:
-            print("Please enter 1, 2, or 3.")
-    except ValueError:
-        print("Invalid input. Please enter a number.")
+        try:
+            choice = int(input("Enter your choice: "))
+            if choice in [1, 2, 3]:
+                break
+            else:
+                print("Please enter 1, 2, or 3.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
         
     if choice == 1:
         secret_number = random.randint(1, 50)
