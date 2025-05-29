@@ -9,18 +9,22 @@ def number_guessing_game():
     choice = int(input("Enter your choice: "))
     if choice == 1:
         secret_number = random.randint(1, 50)
+        range_max = 50
     elif choice == 2:
         secret_number = random.randint(1, 100)
+        range_max = 100
     elif choice == 3:
         secret_number = random.randint(1, 500)
+        range_max = 500
     else:
-        secret_number = random.randint(1, 100)  # Default to Medium if invalid input
-
+        secret_number = random.randint(1, 100)
+        range_max = 100
+  
     attempts = 0
     max_attempts = 10
 
     print("Welcome to the Number Guessing Game!")
-    print(f"I have selected a number between 1 and {secret_number}. Can you guess it?")
+    print(f"I have selected a number between 1 and {range_max}. Can you guess it?")
 
     while attempts < max_attempts:
         try:
