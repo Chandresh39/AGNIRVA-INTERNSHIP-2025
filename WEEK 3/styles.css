@@ -1,0 +1,21 @@
+body {
+    background-color: #f4f4f9;  /* Background color */
+}
+
+p {
+    color: blue;  /* Text color */
+    font-size: 18px;  /* Text size */
+    font-family: Arial, sans-serif;  /* Font family */
+}
+
+div {
+    padding: 10px;  /* Space inside the element */
+    margin: 20px;  /* Space outside the element */
+    border: 2px solid black;  /* Border around the element */
+}
+
+.container {
+    display: flex;  /* Arrange children in a row/column */
+    justify-content: center;  /* Align items horizontally */
+    align-items: center;  /* Align items vertically */
+}
