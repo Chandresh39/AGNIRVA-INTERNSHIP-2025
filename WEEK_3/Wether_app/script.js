@@ -1,4 +1,4 @@
-const apiKey = "http://127.0.0.1:5000/weather?city=London";
+const apiKey = "90cb6920664ee6ee82020c124903c563";
 const weatherButton = document.getElementById("getWeather");
 const resultDiv = document.getElementById("result");
 
