@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import requests
 
 app = Flask(__name__)
-API_KEY = "YOUR_API_KEY"
+API_KEY = "http://127.0.0.1:5000/weather?city=London"
 
 @app.route("/weather", methods=["GET"])
 def get_weather():
