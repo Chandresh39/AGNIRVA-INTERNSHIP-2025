@@ -18,7 +18,7 @@ The first week is all about getting you comfortable with the tools and technolog
 Building on your programming knowledge, Week 2 will focus on essential problem-solving techniques and algorithms, such as **sorting** and **searching**. You’ll also explore **time and space complexity** using **Big-O notation**, which is crucial for writing efficient code.
 
 ---
-<!--
+
 ## Week 3 – Web Development Basics
 
 Week 3 is dedicated to front-end and back-end development. You’ll learn how to:
@@ -28,7 +28,7 @@ Week 3 is dedicated to front-end and back-end development. You’ll learn how to
 - Create a basic server using a back-end framework like **Node.js** or **Flask**
 
 ---
-
+<!--
 ## Week 4 – Intermediate Development
 
 In Week 4, you’ll move into more advanced topics like:
