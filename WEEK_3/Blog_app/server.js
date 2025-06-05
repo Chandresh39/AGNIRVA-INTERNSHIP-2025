@@ -6,6 +6,9 @@ const cors = require("cors");
 // Create the Express app
 const app = express();
 
+app.use(express.static('public'));
+
+
 // Enable CORS to allow front-end access
 app.use(cors());
 
