@@ -1,43 +1,62 @@
-document.getElementById('postForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const title = document.getElementById('title').value;
-    const content = document.getElementById('content').value;
-    
-    // Simple validation
-    if (!title || !content) {
-        alert('Please fill in both fields');
-        return;
-    }
+document.getElementById('postForm').addEventListener('submit', async function (event) {
+  event.preventDefault();
 
-    // Construct the post object
-    const post = { title, content };
+  const title = document.getElementById('title').value.trim();
+  const content = document.getElementById('content').value.trim();
 
-    // Simulate adding to a server
-    addPost(post);
-    displayPosts();
+  if (!title || !content) {
+    alert('Both fields are required!');
+    return;
+  }
+
+  // POST to backend
+  const res = await fetch('/posts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ title, content })
+  });
+
+  if (res.ok) {
+    document.getElementById('title').value = '';
+    document.getElementById('content').value = '';
+    loadPosts(); // refresh the post list
+  } else {
+    alert('Something went wrong!');
+  }
 });
 
-function addPost(post) {
-    // Assuming posts array is declared globally or retrieved from a server
-    posts.push(post);
+async function loadPosts() {
+  const res = await fetch('/posts');
+  const posts = await res.json();
+
+  const postsContainer = document.getElementById('posts');
+  postsContainer.innerHTML = '';
+
+  posts.forEach(post => {
+    const postDiv = document.createElement('div');
+    postDiv.classList.add('post');
+    postDiv.innerHTML = `
+      <h3>${post.title}</h3>
+      <p>${post.content}</p>
+      <button onclick="deletePost(${post.id})">Delete</button>
+    `;
+    postsContainer.appendChild(postDiv);
+  });
 }
 
-function displayPosts() {
-    const postsContainer = document.getElementById('posts');
-    postsContainer.innerHTML = ''; // Clear previous posts
-    posts.forEach((post, index) => {
-        const postElement = document.createElement('div');
-        postElement.className = 'post';
-        postElement.innerHTML = `
-            <h3>${post.title}</h3>
-            <p>${post.content}</p>
-            <button onclick="deletePost(${index})">Delete</button>
-        `;
-        postsContainer.appendChild(postElement);
-    });
+async function deletePost(id) {
+  const res = await fetch(`/posts/${id}`, {
+    method: 'DELETE'
+  });
+
+  if (res.ok) {
+    loadPosts();
+  } else {
+    alert('Could not delete the post!');
+  }
 }
 
-function deletePost(index) {
-    posts.splice(index, 1); // Remove the post from the array
-    displayPosts(); // Re-display posts after deletion
-}
+// Load all posts when page loads
+window.onload = loadPosts;
