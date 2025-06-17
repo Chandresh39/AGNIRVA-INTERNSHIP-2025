@@ -43,7 +43,7 @@ In Week 4, you’ll move into more advanced topics like:
 
 Week 5 will prepare you to:
 
-- Deploy your projects online using platforms like **Netlify** and **Heroku**
+- Deploy your projects online using platforms like **Vercel** and **GitHub**
 - Get a taste of emerging technologies like **AI/ML** and **blockchain**
 - Learn how to integrate these into real-world applications
 
