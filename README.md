@@ -38,7 +38,7 @@ In Week 4, you’ll move into more advanced topics like:
 - Developing more complex projects, such as an **e-commerce site**
 
 ---
-<!--
+
 ## Week 5 – Deployment and Emerging Technologies
 
 Week 5 will prepare you to:
@@ -48,7 +48,7 @@ Week 5 will prepare you to:
 - Learn how to integrate these into real-world applications
 
 ---
-
+<!--
 ## Week 6 – Software Capstone Project Ideas
 
 This week focuses on practical software solutions for real-world challenges. You’ll work on small-scale, functional projects to apply your development skills:
